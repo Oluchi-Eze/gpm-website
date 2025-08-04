@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - God Peace Ministry</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #contact-header {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)
+          ),
+          url("images/contact-bg.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 8em 2em;
+        color: white;
+        text-align: center;
+      }
+      .contact-section {
+        max-width: 1000px;
+        margin: 4em auto;
+        padding: 0 2em;
+      }
+      .contact-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+        justify-content: space-between;
+      }
+      .contact-info,
+      .contact-form {
+        flex: 1 1 45%;
+      }
+      .contact-info h3 {
+        color: #198754;
+      }
+      .contact-info p {
+        font-size: 0.95em;
+        margin: 0.5em 0;
+      }
+      .contact-info i {
+        color: #198754;
+        margin-right: 0.5em;
+      }
+      form label {
+        display: block;
+        margin-top: 1em;
+      }
+      form input,
+      form textarea {
+        width: 100%;
+        padding: 0.6em;
+        margin-top: 0.3em;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+      }
+      form button {
+        margin-top: 1.5em;
+        padding: 0.7em 1.5em;
+        background-color: #198754;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      form button:hover {
+        background-color: #145c39;
+      }
+      .map-container {
+        margin-top: 3em;
+        width: 100%;
+        height: 350px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .map-container iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="main-header">
+      <div class="container">
+        <img src="images/gpm-logo.webp" alt="Logo" class="logo" />
+        <nav>
+          <div class="nav-toggle">&#9776;</div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="mission.html">Vision & Mission</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="sermons.html">Sermons</a></li>
+            <li><a href="media.html">Media & Blog</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="give.html">Give Online</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="register.html" class="register-btn">Register</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Header Section -->
+    <section id="contact-header">
+      <h1
+        style="
+          font-size: 2.5em;
+          font-weight: 700;
+          color: white;
+          margin-bottom: 0.5em;
+        "
+      >
+        Contact Us
+      </h1>
+      <p>
+        We would love to hear from you. Whether it's a question, prayer request,
+        or feedback — reach out today.
+      </p>
+    </section>
+
+    <!-- Contact Info & Form -->
+    <section class="contact-section">
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Our Location</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> God’s Peace Ministry Zanderij
+            29, 1185 ZM Amstelveen.
+          </p>
+
+          <h3>Email</h3>
+          <p><i class="fas fa-envelope"></i> contact@gpmwork.org</p>
+
+          <h3>Phone</h3>
+          <p><i class="fas fa-phone"></i> +31 650 914 842</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <form action="#" method="POST">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+          <div
+            id="contact-success"
+            style="display: none; color: green; margin-top: 1em"
+          >
+            Thank you for reaching out. We’ll get back to you as soon as
+            possible.
+          </div>
+        </div>
+      </div>
+
+      <!-- Google Map Embed -->
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2441.0240498763874!2d4.836028312568042!3d52.279265353907675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5e0175b39c97b%3A0x14f8299505afacfc!2sZanderij%2029%2C%201185%20ZM%20Amstelveen!5e0!3m2!1sen!2snl!4v1753954168799!5m2!1sen!2snl"
+          width="800"
+          height="600"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="footer-content">
+        <!-- Social Media Icons -->
+        <ul class="icons">
+          <li>
+            <a href="#" class="icon brands alt fa-twitter"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands alt fa-facebook-f"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands alt fa-instagram"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon solid alt fa-envelope"
+              ><span class="label">Email</span></a
+            >
+          </li>
+        </ul>
+
+        <!-- Useful Links -->
+        <div class="footer-links">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="mission.html">Mission</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="sermons.html">Sermons</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="give.html">Give Online</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="anbi.html">ANBI gegevens</a></li>
+          </ul>
+        </div>
+
+        <!-- Copyright -->
+        <ul class="copyright">
+          <li>&copy; God Peace Ministries</li>
+          <li>
+            Design:
+            <a href="http://honouredhands.com">Honoured Hands Multimedia</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      const contactForm = document.querySelector(".contact-form form");
+      const contactSuccess = document.getElementById("contact-success");
+
+      if (contactForm && contactSuccess) {
+        contactForm.addEventListener("submit", function (e) {
+          e.preventDefault(); // Prevent real form submission (for now)
+          contactForm.reset(); // Clear form fields
+          contactSuccess.style.display = "block"; // Show success message
+        });
+      }
+    </script>
+  </body>
+</html>

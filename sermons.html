@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sermons - God Peace Ministry</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #sermons-header {
+        background-image: linear-gradient(
+            rgba(0, 4, 72, 0.7),
+            rgba(0, 4, 72, 0.7)
+          ),
+          url("images/sermon.webp");
+        background-size: cover;
+        background-position: center;
+        padding: 8em 2em;
+        color: white;
+        text-align: center;
+      }
+      .sermons-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+        max-width: 1200px;
+        margin: 3em auto;
+        padding: 0 2em;
+        justify-content: center;
+      }
+      .sermon-card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        max-width: 380px;
+        flex: 1 1 320px;
+        transition: transform 0.3s;
+      }
+      .sermon-card:hover {
+        transform: scale(1.02);
+      }
+      .sermon-card iframe,
+      .sermon-card audio {
+        width: 100%;
+        border: none;
+      }
+      .sermon-card-content {
+        padding: 1.2em;
+      }
+      .sermon-card-content h3 {
+        margin: 0 0 0.5em;
+        color: #198754;
+      }
+      .sermon-card-content p {
+        font-size: 0.95em;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="main-header">
+      <div class="container">
+        <img src="images/gpm-logo.webp" alt="Logo" class="logo" />
+        <nav>
+          <div class="nav-toggle">&#9776;</div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="mission.html">Vision & Mission</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="sermons.html" class="active">Sermons</a></li>
+            <li><a href="media.html">Media & Blog</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="give.html">Give Online</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="register.html" class="register-btn">Register</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Header Section -->
+    <section id="sermons-header">
+      <h1
+        style="
+          font-size: 2.5em;
+          font-weight: 700;
+          color: white;
+          margin-bottom: 0.8em;
+        "
+      >
+        Latest Sermons
+      </h1>
+      <p>
+        Be inspired by teachings that strengthen your faith and bring joy to
+        your soul.
+      </p>
+    </section>
+
+    <!-- Sermons Grid -->
+    <section class="sermons-grid">
+      <!-- Sermon 1: YouTube -->
+      <div class="sermon-card">
+        <iframe
+          src="https://www.youtube.com/embed/your-video-id"
+          title="Sermon Title"
+          allowfullscreen
+        ></iframe>
+        <div class="sermon-card-content">
+          <h3>The Joy of the Kingdom</h3>
+          <p>
+            Explore how joy brings strength and healing to the soul in the
+            Kingdom of God.
+          </p>
+        </div>
+      </div>
+
+      <!-- Sermon 2: Audio -->
+      <div class="sermon-card">
+        <audio controls>
+          <source src="media/sermon1.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <div class="sermon-card-content">
+          <h3>Peace That Passes Understanding</h3>
+          <p>
+            A reflection on God’s peace and how to receive it in challenging
+            times.
+          </p>
+        </div>
+      </div>
+
+      <!-- Add more sermons -->
+    </section>
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="footer-content">
+        <!-- Social Media Icons -->
+        <ul class="icons">
+          <li>
+            <a href="#" class="icon brands alt fa-twitter"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands alt fa-facebook-f"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands alt fa-instagram"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon solid alt fa-envelope"
+              ><span class="label">Email</span></a
+            >
+          </li>
+        </ul>
+
+        <!-- Useful Links -->
+        <div class="footer-links">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="mission.html">Mission</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="sermons.html">Sermons</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="give.html">Give Online</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="anbi.html">ANBI gegevens</a></li>
+          </ul>
+        </div>
+
+        <!-- Copyright -->
+        <ul class="copyright">
+          <li>&copy; God Peace Ministries</li>
+          <li>
+            Design:
+            <a href="http://honouredhands.com">Honoured Hands Multimedia</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

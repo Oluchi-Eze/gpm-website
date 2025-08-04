@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Us - God Peace Ministry</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #register-header {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+          ),
+          url("images/join-bg.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 8em 2em;
+        color: white;
+        text-align: center;
+      }
+      .register-section {
+        max-width: 700px;
+        margin: 4em auto;
+        padding: 0 2em;
+      }
+      .register-section form {
+        background: #f9f9f9;
+        padding: 2em;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      }
+      form label {
+        display: block;
+        margin-top: 1em;
+        font-weight: 600;
+      }
+      form input,
+      form select,
+      form textarea {
+        width: 100%;
+        padding: 0.6em;
+        margin-top: 0.3em;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+      }
+      form button {
+        margin-top: 2em;
+        background-color: #198754;
+        color: white;
+        padding: 0.8em 1.5em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      form button:hover {
+        background-color: #145c39;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="main-header">
+      <div class="container">
+        <img src="images/gpm-logo.webp" alt="Logo" class="logo" />
+        <nav>
+          <div class="nav-toggle">&#9776;</div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="mission.html">Vision & Mission</a></li>
+            <li><a href="events.html" class="active">Events</a></li>
+            <li><a href="sermons.html">Sermons</a></li>
+            <li><a href="media.html">Media & Blog</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="give.html">Give Online</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="register.html" class="register-btn">Register</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Header -->
+    <section id="register-header">
+      <h1
+        style="
+          font-size: 2.5em;
+          font-weight: 700;
+          color: white;
+          margin-bottom: 0.5em;
+        "
+      >
+        Become a Part of Our Family
+      </h1>
+      <p>
+        At God Peace Ministry, you are welcomed and loved. Join our congregation
+        and walk with us in the joy and peace of Christ.
+      </p>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="register-section">
+      <form action="#" method="POST">
+        <label for="full-name">Full Name *</label>
+        <input type="text" id="full-name" name="full-name" required />
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" />
+
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" />
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" />
+
+        <label for="interest">What brings you to God Peace Ministry?</label>
+        <select id="interest" name="interest">
+          <option value="">-- Select an option --</option>
+          <option value="membership">I want to become a member</option>
+          <option value="prayer">I need prayer & spiritual support</option>
+          <option value="service">I want to serve</option>
+          <option value="learn">I want to learn and grow spiritually</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="message">Your Message (Optional)</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+
+        <button type="submit">Submit Registration</button>
+      </form>
+      <div
+        id="registration-success"
+        style="display: none; color: green; margin-top: 1em"
+      >
+        Thank you for registering! We will contact you soon.
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="footer-content">
+        <!-- Social Media Icons -->
+        <ul class="icons">
+          <li>
+            <a href="#" class="icon brands alt fa-twitter"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands alt fa-facebook-f"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands alt fa-instagram"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon solid alt fa-envelope"
+              ><span class="label">Email</span></a
+            >
+          </li>
+        </ul>
+
+        <!-- Useful Links -->
+        <div class="footer-links">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="mission.html">Mission</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="sermons.html">Sermons</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="give.html">Give Online</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="anbi.html">ANBI gegevens</a></li>
+          </ul>
+        </div>
+
+        <!-- Copyright -->
+        <ul class="copyright">
+          <li>&copy; God Peace Ministries</li>
+          <li>
+            Design:
+            <a href="http://honouredhands.com">Honoured Hands Multimedia</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      const regForm = document.querySelector("form");
+      const regSuccess = document.getElementById("registration-success");
+
+      if (regForm && regSuccess) {
+        regForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+          regForm.reset();
+          regSuccess.style.display = "block";
+        });
+      }
+    </script>
+  </body>
+</html>

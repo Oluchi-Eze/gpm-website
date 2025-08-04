@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media - God Peace Ministry</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #media-header {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)
+          ),
+          url("images/media-bg.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 8em 2em;
+        color: white;
+        text-align: center;
+      }
+      .media-section {
+        max-width: 1200px;
+        margin: 3em auto;
+        padding: 0 2em;
+      }
+      .gallery-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5em;
+        justify-content: center;
+      }
+      .gallery-grid img {
+        max-width: 300px;
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+      .video-grid iframe {
+        width: 100%;
+        max-width: 500px;
+        height: 280px;
+        border: none;
+        border-radius: 8px;
+      }
+      .video-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+        justify-content: center;
+      }
+      .section-title {
+        text-align: center;
+        margin: 2em 0 1em;
+        font-size: 2em;
+        color: #198754;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="main-header">
+      <div class="container">
+        <img src="images/gpm-logo.webp" alt="Logo" class="logo" />
+        <nav>
+          <div class="nav-toggle">&#9776;</div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="mission.html">Vision & Mission</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="sermons.html">Sermons</a></li>
+            <li><a href="media.html" class="active">Media & Blog</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="give.html">Give Online</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="register.html" class="register-btn">Register</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Media Header -->
+    <section id="media-header">
+      <h1
+        style="
+          font-size: 2.5em;
+          font-weight: 700;
+          color: white;
+          margin-bottom: 0.5em;
+        "
+      >
+        Media Gallery
+      </h1>
+      <p>Explore our photos, videos, and moments from services and events.</p>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="media-section">
+      <h2 class="section-title">Photos</h2>
+      <div class="gallery-grid">
+        <img src="images/photo1.jpg" alt="Worship service" />
+        <img src="images/photo2.jpg" alt="Community gathering" />
+        <img src="images/photo3.jpg" alt="Prayer time" />
+        <!-- Add more photos as needed -->
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="media-section">
+      <h2 class="section-title">Videos</h2>
+      <div class="video-grid">
+        <iframe
+          src="https://www.youtube.com/embed/your-video-id"
+          allowfullscreen
+          title="Sermon video 1"
+        ></iframe>
+        <iframe
+          src="https://www.youtube.com/embed/your-video-id2"
+          allowfullscreen
+          title="Church event video"
+        ></iframe>
+        <!-- Add more video embeds -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="footer-content">
+        <!-- Social Media Icons -->
+        <ul class="icons">
+          <li>
+            <a href="#" class="icon brands alt fa-twitter"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands alt fa-facebook-f"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands alt fa-instagram"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon solid alt fa-envelope"
+              ><span class="label">Email</span></a
+            >
+          </li>
+        </ul>
+
+        <!-- Useful Links -->
+        <div class="footer-links">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="mission.html">Mission</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="sermons.html">Sermons</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="give.html">Give Online</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="anbi.html">ANBI gegevens</a></li>
+          </ul>
+        </div>
+
+        <!-- Copyright -->
+        <ul class="copyright">
+          <li>&copy; God Peace Ministries</li>
+          <li>
+            Design:
+            <a href="http://honouredhands.com">Honoured Hands Multimedia</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

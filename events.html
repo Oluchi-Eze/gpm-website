@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events - God Peace Ministry</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #events-header {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)
+          ),
+          url("images/events.webp");
+        background-size: cover;
+        background-position: center;
+        padding: 8em 2em;
+        color: white;
+        text-align: center;
+      }
+      .events-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+        max-width: 1200px;
+        margin: 3em auto;
+        padding: 0 2em;
+        justify-content: center;
+      }
+      .event-card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        max-width: 350px;
+        flex: 1 1 300px;
+        transition: transform 0.3s;
+      }
+      .event-card:hover {
+        transform: scale(1.02);
+      }
+      .event-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .event-card-content {
+        padding: 1.2em;
+      }
+      .event-card-content h3 {
+        margin: 0 0 0.5em;
+        color: #198754;
+      }
+      .event-card-content p {
+        font-size: 0.95em;
+        color: #555;
+      }
+
+      .past-events {
+        max-width: 900px;
+        margin: 4em auto;
+        padding: 0 2em;
+      }
+      .past-events h2 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 1em;
+      }
+      .past-event {
+        margin-bottom: 2em;
+        border-left: 4px solid #198754;
+        padding-left: 1em;
+      }
+      .past-event h4 {
+        margin: 0 0 0.3em;
+        color: #333;
+      }
+      .past-event small {
+        display: block;
+        font-size: 0.85em;
+        color: #888;
+        margin-bottom: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="main-header">
+      <div class="container">
+        <img src="images/gpm-logo.webp" alt="Logo" class="logo" />
+        <nav>
+          <div class="nav-toggle">&#9776;</div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="mission.html">Vision & Mission</a></li>
+            <li><a href="events.html" class="active">Events</a></li>
+            <li><a href="sermons.html">Sermons</a></li>
+            <li><a href="media.html">Media & Blog</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="give.html">Give Online</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="register.html" class="register-btn">Register</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Events Header -->
+    <section id="events-header">
+      <h1
+        style="
+          font-size: 2.5em;
+          font-weight: 700;
+          color: white;
+          margin-bottom: 0.5em;
+        "
+      >
+        Church Events
+      </h1>
+      <p>
+        Stay updated with our upcoming programs, worship services, and community
+        events.
+      </p>
+    </section>
+
+    <!-- Upcoming Events (Grid) -->
+    <section class="events-grid">
+      <!-- Event 1 -->
+      <div class="event-card">
+        <img src="images/event1.jpg" alt="New Year Service" />
+        <div class="event-card-content">
+          <h3>New Year Service</h3>
+          <p>
+            Join us in thanksgiving as we begin the year with joyful worship and
+            communion. Sunday, January 7, 2025.
+          </p>
+        </div>
+      </div>
+
+      <!-- Event 2 -->
+      <div class="event-card">
+        <img src="images/event2.jpg" alt="Liturgical Donations" />
+        <div class="event-card-content">
+          <h3>Liturgical Donations</h3>
+          <p>
+            We’ll be collecting liturgical items from Egmond’s church community
+            on January 13, 2025. Your presence is appreciated.
+          </p>
+        </div>
+      </div>
+
+      <!-- Add more events here -->
+    </section>
+
+    <!-- Past Events (List) -->
+    <section class="past-events">
+      <h2>Past Events</h2>
+
+      <div class="past-event">
+        <h4>Youth Night 2024</h4>
+        <small>November 12, 2024</small>
+        <p>
+          An evening of music, open discussion, and shared testimony for youth
+          navigating faith and identity in a changing world.
+        </p>
+      </div>
+
+      <div class="past-event">
+        <h4>Women's Healing Retreat</h4>
+        <small>September 23, 2024</small>
+        <p>
+          A special day of worship and encouragement for women who have
+          experienced spiritual and emotional wounds.
+        </p>
+      </div>
+
+      <!-- Add more past events here -->
+    </section>
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="footer-content">
+        <!-- Social Media Icons -->
+        <ul class="icons">
+          <li>
+            <a href="#" class="icon brands alt fa-twitter"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands alt fa-facebook-f"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands alt fa-instagram"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon solid alt fa-envelope"
+              ><span class="label">Email</span></a
+            >
+          </li>
+        </ul>
+
+        <!-- Useful Links -->
+        <div class="footer-links">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="mission.html">Mission</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="sermons.html">Sermons</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="give.html">Give Online</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="anbi.html">ANBI gegevens</a></li>
+          </ul>
+        </div>
+
+        <!-- Copyright -->
+        <ul class="copyright">
+          <li>&copy; God Peace Ministries</li>
+          <li>
+            Design:
+            <a href="http://honouredhands.com">Honoured Hands Multimedia</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
