@@ -1,21 +1,76 @@
 <!DOCTYPE html>
+<!--
+	Designed by Oluchi Eze | Honoured Hands Multimedia
+	www.honouredhands.com | admin@honouredhands.com
+-->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us - God Peace Ministry</title>
     <link rel="stylesheet" href="assets/css/main.css" />
-    <!-- Font Awesome (if needed) -->
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
+    <!-- Top green social bar -->
+    <div class="top-bar">
+      <div class="container top-bar-content">
+        <!-- Left: email -->
+        <div class="email-link">
+          <a href="mailto:contact@gpmwork.org" aria-label="Email">
+            <i class="fas fa-envelope"></i> contact@gpmwork.org
+          </a>
+        </div>
+
+        <!-- Right: social media -->
+        <div class="social-links">
+          <a
+            href="https://twitter.com/yourprofile"
+            target="_blank"
+            aria-label="Twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://facebook.com/yourpage"
+            target="_blank"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://youtube.com/yourchannel"
+            target="_blank"
+            aria-label="YouTube"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a
+            href="https://instagram.com/yourprofile"
+            target="_blank"
+            aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://linkedin.com/company/yourprofile"
+            target="_blank"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
+    </div>
     <!-- Navigation -->
     <header class="main-header">
       <div class="container">
-        <img src="images/gpm-logo.webp" alt="Logo" class="logo" />
+        <a href="index.html">
+          <img
+            src="images/gpm-logo.webp"
+            alt="Logo"
+            class="logo"
+            loading="eager"
+          />
+        </a>
         <nav>
           <div class="nav-toggle">&#9776;</div>
           <ul class="nav-links">
@@ -24,7 +79,8 @@
             <li><a href="mission.html">Vision & Mission</a></li>
             <li><a href="events.html">Events</a></li>
             <li><a href="sermons.html">Sermons</a></li>
-            <li><a href="media.html">Media & Blog</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="courses.html">Courses</a></li>
             <li><a href="give.html">Give Online</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -35,71 +91,25 @@
     </header>
 
     <!-- Header Section -->
-    <section
-      id="about-header"
-      style="
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.8)
-          ),
-          url('images/about us.jpg');
-        background-size: cover;
-        background-position: top;
-        padding: 6em 2em 4em;
-        color: white;
-        text-align: center;
-      "
-    >
-      <div style="max-width: 800px; margin: 0 auto">
-        <h1
-          style="
-            font-size: 2.5em;
-            font-weight: 700;
-            color: white;
-            margin-bottom: 0.5em;
-          "
-        >
-          About Us
-        </h1>
-        <p style="font-size: 1.2em; line-height: 1.6">
+    <section id="about-header" class="page-header">
+      <div class="header-content">
+        <h1>About Us</h1>
+        <p>
           God Peace Ministry seeks The Kingdom of God (Matthew 6:31). The
-          institution follows Christ Jesus of Nazareth’s teaching. It is a
-          non-denominational congregation. We educate on the Kingdom of God’s
+          institution follows Christ Jesus of Nazareth's teaching. It is a
+          non-denominational congregation. We educate on the Kingdom of God's
           life.
         </p>
       </div>
     </section>
 
     <!-- Three-Column Section -->
-    <section
-      id="about-columns"
-      style="background-color: #54b4f9a7; padding: 4em 2em"
-    >
-      <div
-        style="
-          display: flex;
-          flex-wrap: wrap;
-          gap: 2em;
-          max-width: 1200px;
-          margin: 0 auto;
-        "
-      >
+    <section id="about-columns" class="section-light-blue">
+      <div class="columns-container">
         <!-- ONE CONGREGATION -->
-        <div
-          style="
-            flex: 1 1 300px;
-            background: rgb(214, 244, 249);
-            padding: 2em;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            text-align: center;
-          "
-        >
-          <h3 style="font-weight: 700; color: #222">
-            ONE CONGREGATION<br />
-            DIFFERENT PEOPLE
-          </h3>
-          <p style="margin-top: 1em; color: #444">
+        <div class="about-column">
+          <h3>ONE CONGREGATION<br />DIFFERENT PEOPLE</h3>
+          <p>
             Have you pondered on this question: what is most important for you?
             What do you want to do with your own and only precious life—a life
             that has no duplicate? This question is very personal and demands a
@@ -108,21 +118,9 @@
         </div>
 
         <!-- TAKE YOUR NEXT STEP -->
-        <div
-          style="
-            flex: 1 1 300px;
-            background: rgb(214, 244, 249);
-            padding: 2em;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            text-align: center;
-          "
-        >
-          <h3 style="font-weight: 700; color: #222">
-            TAKE YOUR<br />
-            NEXT STEP
-          </h3>
-          <p style="margin-top: 1em; color: #444">
+        <div class="about-column">
+          <h3>TAKE YOUR<br />NEXT STEP</h3>
+          <p>
             Seeking the right answer is our commitment. The right answer calms
             your soul, heart, mind and gives you clarity. Join us now. We have
             different opportunities for the seeker both in learning and serving.
@@ -130,20 +128,9 @@
         </div>
 
         <!-- YOU MAKE A DIFFERENCE -->
-        <div
-          style="
-            flex: 1 1 300px;
-            background: rgb(214, 244, 249);
-            padding: 2em;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            text-align: center;
-          "
-        >
-          <h3 style="font-weight: 700; color: #222">
-            YOU MAKE<br />A DIFFERENCE.
-          </h3>
-          <p style="margin-top: 1em; color: #444">
+        <div class="about-column">
+          <h3>YOU MAKE<br />A DIFFERENCE.</h3>
+          <p>
             The only lasting answer to your worry and fear is to find GOD. The
             Joy and Peace you receive make a difference for you — and you make a
             difference for others.
@@ -153,15 +140,10 @@
     </section>
 
     <!-- Leadership Section -->
-    <section
-      id="leadership"
-      style="background-color: #ffffffd9; padding: 4em 2em"
-    >
-      <div style="text-align: center; max-width: 800px; margin: 0 auto">
-        <h2 style="font-size: 2em; font-weight: 700; margin-bottom: 1em">
-          Our Leadership
-        </h2>
-        <p style="font-size: 1.1em; color: #444">
+    <section id="leadership" class="section-white">
+      <div class="section-intro">
+        <h2>Our Leadership</h2>
+        <p>
           Your talent and gift give you access to leadership service. Members
           are encouraged to discover their areas of leadership. Character and
           habits worthy of leadership are considered.
@@ -169,35 +151,18 @@
       </div>
 
       <!-- Leader Profiles -->
-      <div
-        style="
-          max-width: 1000px;
-          margin: 3em auto;
-          display: flex;
-          flex-direction: column;
-          gap: 3em;
-        "
-      >
+      <div class="leaders-container">
         <!-- Madelon (image left) -->
-        <div
-          style="display: flex; flex-wrap: wrap; align-items: center; gap: 2em"
-        >
+        <div class="leader-profile">
           <img
             src="images/Madelon-Grant-.webp"
             alt="Madelon Grant"
-            style="
-              flex: 1 1 200px;
-              width: 100%;
-              max-width: 300px;
-              height: auto;
-              border-radius: 12px;
-              object-fit: cover;
-            "
+            loading="lazy"
           />
-          <div style="flex: 1 1 500px">
-            <h3 style="margin: 0 0 0.3em">Madelon Grant</h3>
+          <div class="leader-info">
+            <h3>Madelon Grant</h3>
             <strong>Stewardship</strong>
-            <p style="margin-top: 0.8em; color: #555">
+            <p>
               Madelon Grant is 42 years old and serves God Peace Ministry as a
               steward. She uses her organisational skills to provide the basic
               practical issues that are involved in being a healthy, stable
@@ -207,31 +172,16 @@
         </div>
 
         <!-- Aurelia (image right) -->
-        <div
-          style="
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row-reverse;
-            align-items: center;
-            gap: 2em;
-          "
-        >
+        <div class="leader-profile leader-reverse">
           <img
             src="images/Aurelia-Osunwoke.webp"
             alt="Aurelia Osunwoke"
-            style="
-              flex: 1 1 200px;
-              width: 100%;
-              max-width: 300px;
-              height: auto;
-              border-radius: 12px;
-              object-fit: cover;
-            "
+            loading="lazy"
           />
-          <div style="flex: 1 1 500px">
-            <h3 style="margin: 0 0 0.3em">Aurelia Osunwoke</h3>
+          <div class="leader-info">
+            <h3>Aurelia Osunwoke</h3>
             <strong>Youth Leader</strong>
-            <p style="margin-top: 0.8em; color: #555">
+            <p>
               Aurelia Osunwoke is 24 years old. She was born and raised in
               Amsterdam, is a trained recruiter and works as an administrative
               staff. She has a mixed Nigerian and Surinamese background.
@@ -240,25 +190,16 @@
         </div>
 
         <!-- Prince (image left) -->
-        <div
-          style="display: flex; flex-wrap: wrap; align-items: center; gap: 2em"
-        >
+        <div class="leader-profile">
           <img
             src="images/Prince-Olikaeze.webp"
             alt="Prince Olikeze"
-            style="
-              flex: 1 1 200px;
-              width: 100%;
-              max-width: 300px;
-              height: auto;
-              border-radius: 12px;
-              object-fit: cover;
-            "
+            loading="lazy"
           />
-          <div style="flex: 1 1 500px">
-            <h3 style="margin: 0 0 0.3em">Prince Olikeze</h3>
+          <div class="leader-info">
+            <h3>Prince Olikeze</h3>
             <strong>Music</strong>
-            <p style="margin-top: 0.8em; color: #555">
+            <p>
               Prince Olikeze leads the worship at God Peace Ministry. He uses
               his personal experiences of hardship and God's power to deliver
               and protect us from harm to encourage others with similar
@@ -268,31 +209,12 @@
         </div>
 
         <!-- Holiness (image right) -->
-        <div
-          style="
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row-reverse;
-            align-items: center;
-            gap: 2em;
-          "
-        >
-          <img
-            src="images/Holiness.webp"
-            alt="Holiness"
-            style="
-              flex: 1 1 200px;
-              width: 100%;
-              max-width: 300px;
-              height: auto;
-              border-radius: 12px;
-              object-fit: cover;
-            "
-          />
-          <div style="flex: 1 1 500px">
-            <h3 style="margin: 0 0 0.3em">Holiness</h3>
+        <div class="leader-profile leader-reverse">
+          <img src="images/Holiness.webp" alt="Holiness" loading="lazy" />
+          <div class="leader-info">
+            <h3>Holiness</h3>
             <strong>Women Ministry</strong>
-            <p style="margin-top: 0.8em; color: #555">
+            <p>
               Holiness is a dedicated prayer and worshipper with a special
               calling to bring spiritually battered and broken women into the
               healing light of Christ. She is mother of two children and within
@@ -302,25 +224,12 @@
         </div>
 
         <!-- Godian (image left) -->
-        <div
-          style="display: flex; flex-wrap: wrap; align-items: center; gap: 2em"
-        >
-          <img
-            src="images/Godian.webp"
-            alt="Godian Ejiogu"
-            style="
-              flex: 1 1 200px;
-              width: 100%;
-              max-width: 300px;
-              height: auto;
-              border-radius: 12px;
-              object-fit: cover;
-            "
-          />
-          <div style="flex: 1 1 500px">
-            <h3 style="margin: 0 0 0.3em">Godian Ejiogu</h3>
+        <div class="leader-profile">
+          <img src="images/Godian.webp" alt="Godian Ejiogu" loading="lazy" />
+          <div class="leader-info">
+            <h3>Godian Ejiogu</h3>
             <strong>General Overseer</strong>
-            <p style="margin-top: 0.8em; color: #555">
+            <p>
               Godian Ejiogu is a spiritual caregiver, theologian, and pastoral
               worker specializing in culturally sensitive care. He promotes
               peace and dignity, and guides people to find spiritual clarity and
@@ -335,30 +244,6 @@
     <!-- Footer -->
     <section id="footer">
       <div class="footer-content">
-        <!-- Social Media Icons -->
-        <ul class="icons">
-          <li>
-            <a href="#" class="icon brands alt fa-twitter"
-              ><span class="label">Twitter</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon brands alt fa-facebook-f"
-              ><span class="label">Facebook</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon brands alt fa-instagram"
-              ><span class="label">Instagram</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon solid alt fa-envelope"
-              ><span class="label">Email</span></a
-            >
-          </li>
-        </ul>
-
         <!-- Useful Links -->
         <div class="footer-links">
           <h4>Links</h4>

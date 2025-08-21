@@ -7,24 +7,77 @@
   <head>
     <title>Home – God Peace Ministry</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
+      name="description"
+      content="God Peace Ministry - A community loving Christ Jesus and seeking the Kingdom of God lifestyle."
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body class="is-preload">
+    <!-- Top green social bar -->
+    <div class="top-bar">
+      <div class="container top-bar-content">
+        <!-- Left: email -->
+        <div class="email-link">
+          <a href="mailto:contact@gpmwork.org" aria-label="Email">
+            <i class="fas fa-envelope"></i> contact@gpmwork.org
+          </a>
+        </div>
+
+        <!-- Right: social media -->
+        <div class="social-links">
+          <a
+            href="https://twitter.com/yourprofile"
+            target="_blank"
+            aria-label="Twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://facebook.com/yourpage"
+            target="_blank"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://youtube.com/yourchannel"
+            target="_blank"
+            aria-label="YouTube"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a
+            href="https://instagram.com/yourprofile"
+            target="_blank"
+            aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://linkedin.com/company/yourprofile"
+            target="_blank"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
+    </div>
     <!-- Navigation -->
     <header class="main-header">
       <div class="container">
-        <img src="images/gpm-logo.webp" alt="Logo" class="logo" />
+        <a href="index.html">
+          <img
+            src="images/gpm-logo.webp"
+            alt="Logo"
+            class="logo"
+            loading="eager"
+          />
+        </a>
         <nav>
           <div class="nav-toggle">&#9776;</div>
           <ul class="nav-links">
@@ -33,7 +86,8 @@
             <li><a href="mission.html">Vision & Mission</a></li>
             <li><a href="events.html">Events</a></li>
             <li><a href="sermons.html">Sermons</a></li>
-            <li><a href="media.html">Media & Blog</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="courses.html">Courses</a></li>
             <li><a href="give.html">Give Online</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -64,279 +118,85 @@
       </div>
     </section>
 
-    <!-- Live Stream Section with Image on Left, Text on Right -->
-    <section
-      id="livestream"
-      style="background-color: #fff; padding: 6em 2em 4em"
-    >
-      <div
-        style="
-          display: flex;
-          flex-wrap: wrap;
-          max-width: 900px;
-          margin: 0 auto;
-          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-          border-radius: 20px;
-          overflow: hidden;
-        "
-      >
+    <!-- Live Stream Section -->
+    <section id="livestream" class="section-padding">
+      <div class="livestream-container">
         <!-- Left: Image -->
-        <div
-          style="
-            flex: 1 1 300px;
-            min-height: 250px;
-            background: url('images/live-stream.jpg') center/cover no-repeat;
-          "
-        ></div>
+        <div class="livestream-image"></div>
 
         <!-- Right: Text -->
-        <div
-          style="
-            flex: 1 1 300px;
-            background-color: #0171f1;
-            color: #fff;
-            padding: 1.2em;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-          "
-        >
-          <h2
-            style="
-              margin-bottom: 0.5em;
-              font-weight: 800;
-              font-size: 2em;
-              color: #ffffff;
-            "
-          >
-            Join the Sunday Live Stream
-          </h2>
-          <p style="font-size: 1.2em; margin-bottom: 1em">
-            Every Sunday at 11:00 am to 12:30 am
-          </p>
-          <a
-            href="https://your-livestream-link.com"
-            class="button"
-            style="background-color: #1cf594; color: white"
-            onmouseover="this.style.backgroundColor='#218838'; this.style.transform='scale(1.05)';"
-            onmouseout="this.style.backgroundColor='#1cf594'; this.style.transform='scale(1)';"
-            >Join Now</a
-          >
+        <div class="livestream-content">
+          <h2>Join the Sunday Live Stream</h2>
+          <p>Every Sunday at 11:00 am to 12:30 pm</p>
+          <a href="https://your-livestream-link.com" class="button join-now">
+            Join Now
+          </a>
         </div>
       </div>
+
       <!-- Our Services Section -->
-      <div style="max-width: 800px; margin: 3em auto 0; text-align: center">
-        <h3
-          style="
-            font-weight: 700;
-            font-size: 1.6em;
-            color: #222;
-            margin-bottom: 1em;
-          "
-        >
-          OUR SERVICES
-        </h3>
-        <p style="font-size: 1.1em; color: #444; line-height: 1.6">
+      <div class="services-intro">
+        <h3>OUR SERVICES</h3>
+        <p>
           Our congregation believes in Christ Jesus of Nazareth &amp; loves The
-          Living God and people made in The Creator’s Image. The cognitive care
+          Living God and people made in The Creator's Image. The cognitive care
           of the soul which is a fingerprint of God the creator is our basic
           work. Our mission is to find Joy which gives peace to the soul.
         </p>
-        <div style="margin-top: 1.5em">
-          <a
-            href="about.html"
-            class="button"
-            style="background-color: #007bff; color: #fff"
-            onmouseover="this.style.backgroundColor='#26b0fa'; this.style.transform='scale(1.05)';"
-            onmouseout="this.style.backgroundColor='#007bff'; this.style.transform='scale(1)';"
-            >Learn More</a
-          >
+        <div class="cta-button">
+          <a href="about.html" class="button learn-more">Learn More</a>
         </div>
       </div>
 
       <!-- Service Highlights Grid -->
-      <div
-        style="
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 2em;
-          margin: 3em auto 0;
-          max-width: 1000px;
-          padding: 0 1em;
-        "
-      >
+      <div class="services-grid">
         <!-- Weekly Services -->
-        <a
-          href="events.html"
-          style="
-            flex: 1 1 280px;
-            background: #ffffff;
-            padding: 1.8em;
-            border-radius: 14px;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            color: inherit;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            border: 1px solid #ddd;
-          "
-          onmouseover="this.style.background='#f5f5f5'; this.style.transform='translateY(-5px)';"
-          onmouseout="this.style.background='#ffffff'; this.style.transform='translateY(0)';"
-        >
-          <span
-            class="icon solid fa-church"
-            style="font-size: 2em; color: #007bff"
-          ></span>
-          <h4 style="font-weight: 700; margin: 0.8em 0 0.4em">
-            Weekly Services
-          </h4>
-          <p style="color: #444">
-            Every Sunday from 11:00 am to 12:30 pm. Doors open at 10:00 am.
-          </p>
+        <a href="events.html" class="service-card">
+          <span class="fas fa-church service-icon"></span>
+          <h4>Weekly Services</h4>
+          <p>Every Sunday from 11:00 am to 12:30 pm. Doors open at 10:00 am.</p>
         </a>
 
         <!-- Youth -->
-        <a
-          href="youth.html"
-          style="
-            flex: 1 1 280px;
-            background: #ffffff;
-            padding: 1.8em;
-            border-radius: 14px;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            color: inherit;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            border: 1px solid #ddd;
-          "
-          onmouseover="this.style.background='#f5f5f5'; this.style.transform='translateY(-5px)';"
-          onmouseout="this.style.background='#ffffff'; this.style.transform='translateY(0)';"
-        >
-          <span
-            class="icon solid fa-users"
-            style="font-size: 2em; color: #28a745"
-          ></span>
-          <h4 style="font-weight: 700; margin: 0.8em 0 0.4em">Youth</h4>
-          <p style="color: #444">
+        <a href="about.html" class="service-card">
+          <span class="fas fa-users service-icon"></span>
+          <h4>Youth</h4>
+          <p>
             Special programs for youth focused on identity and life questions.
           </p>
         </a>
 
         <!-- Kids -->
-        <a
-          href="kids.html"
-          style="
-            flex: 1 1 280px;
-            background: #ffffff;
-            padding: 1.8em;
-            border-radius: 14px;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            color: inherit;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            border: 1px solid #ddd;
-          "
-          onmouseover="this.style.background='#f5f5f5'; this.style.transform='translateY(-5px)';"
-          onmouseout="this.style.background='#ffffff'; this.style.transform='translateY(0)';"
-        >
-          <span
-            class="icon solid fa-child"
-            style="font-size: 2em; color: #ff9800"
-          ></span>
-          <h4 style="font-weight: 700; margin: 0.8em 0 0.4em">Kids</h4>
-          <p style="color: #444">
-            Children are welcomed and nurtured in our congregation.
-          </p>
+        <a href="about.html" class="service-card">
+          <span class="fas fa-child service-icon"></span>
+          <h4>Kids</h4>
+          <p>Children are welcomed and nurtured in our congregation.</p>
         </a>
 
         <!-- Special Events -->
-        <a
-          href="events.html"
-          style="
-            flex: 1 1 280px;
-            background: #ffffff;
-            padding: 1.8em;
-            border-radius: 14px;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            color: inherit;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            border: 1px solid #ddd;
-          "
-          onmouseover="this.style.background='#f5f5f5'; this.style.transform='translateY(-5px)';"
-          onmouseout="this.style.background='#ffffff'; this.style.transform='translateY(0)';"
-        >
-          <span
-            class="icon solid fa-calendar-alt"
-            style="font-size: 2em; color: #9c27b0"
-          ></span>
-          <h4 style="font-weight: 700; margin: 0.8em 0 0.4em">
-            Special Events
-          </h4>
-          <p style="color: #444">
+        <a href="events.html" class="service-card">
+          <span class="fas fa-calendar-alt service-icon"></span>
+          <h4>Special Events</h4>
+          <p>
             Services and liturgical events such as New Year celebrations and
             outreach programs.
           </p>
         </a>
 
         <!-- Counseling -->
-        <a
-          href="counseling.html"
-          style="
-            flex: 1 1 280px;
-            background: #ffffff;
-            padding: 1.8em;
-            border-radius: 14px;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            color: inherit;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            border: 1px solid #ddd;
-          "
-          onmouseover="this.style.background='#f5f5f5'; this.style.transform='translateY(-5px)';"
-          onmouseout="this.style.background='#ffffff'; this.style.transform='translateY(0)';"
-        >
-          <span
-            class="icon solid fa-hands-helping"
-            style="font-size: 2em; color: #e91e63"
-          ></span>
-          <h4 style="font-weight: 700; margin: 0.8em 0 0.4em">Counseling</h4>
-          <p style="color: #444">
+        <a href="contact.html" class="service-card">
+          <span class="fas fa-hands-helping service-icon"></span>
+          <h4>Counseling</h4>
+          <p>
             We offer support for individuals, couples, groups, and communities.
           </p>
         </a>
 
         <!-- Giving -->
-        <a
-          href="give.html"
-          style="
-            flex: 1 1 280px;
-            background: #ffffff;
-            padding: 1.8em;
-            border-radius: 14px;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            color: inherit;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            border: 1px solid #ddd;
-          "
-          onmouseover="this.style.background='#f5f5f5'; this.style.transform='translateY(-5px)';"
-          onmouseout="this.style.background='#ffffff'; this.style.transform='translateY(0)';"
-        >
-          <span
-            class="icon solid fa-hand-holding-heart"
-            style="font-size: 2em; color: #f44336"
-          ></span>
-          <h4 style="font-weight: 700; margin: 0.8em 0 0.4em">Giving</h4>
-          <p style="color: #444">
+        <a href="give.html" class="service-card">
+          <span class="fas fa-hand-holding-heart service-icon"></span>
+          <h4>Giving</h4>
+          <p>
             Your giving supports our mission. We receive with gratitude and
             bless in return.
           </p>
@@ -347,30 +207,6 @@
     <!-- Footer -->
     <section id="footer">
       <div class="footer-content">
-        <!-- Social Media Icons -->
-        <ul class="icons">
-          <li>
-            <a href="#" class="icon brands alt fa-twitter"
-              ><span class="label">Twitter</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon brands alt fa-facebook-f"
-              ><span class="label">Facebook</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon brands alt fa-instagram"
-              ><span class="label">Instagram</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon solid alt fa-envelope"
-              ><span class="label">Email</span></a
-            >
-          </li>
-        </ul>
-
         <!-- Useful Links -->
         <div class="footer-links">
           <h4>Links</h4>

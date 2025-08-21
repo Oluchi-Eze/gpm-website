@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Give - God Peace Ministry</title>
     <link rel="stylesheet" href="assets/css/main.css" />
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
+
     <style>
       #give-header {
         background-image: linear-gradient(
@@ -71,10 +68,62 @@
     </style>
   </head>
   <body>
+    <!-- Top green social bar -->
+    <div class="top-bar">
+      <div class="container top-bar-content">
+        <!-- Left: email -->
+        <div class="email-link">
+          <a href="mailto:contact@gpmwork.org" aria-label="Email">
+            <i class="fas fa-envelope"></i> contact@gpmwork.org
+          </a>
+        </div>
+
+        <!-- Right: social media -->
+        <div class="social-links">
+          <a
+            href="https://twitter.com/yourprofile"
+            target="_blank"
+            aria-label="Twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://facebook.com/yourpage"
+            target="_blank"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://youtube.com/yourchannel"
+            target="_blank"
+            aria-label="YouTube"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a
+            href="https://instagram.com/yourprofile"
+            target="_blank"
+            aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://linkedin.com/company/yourprofile"
+            target="_blank"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
+    </div>
     <!-- Navigation -->
     <header class="main-header">
       <div class="container">
-        <img src="images/gpm-logo.webp" alt="Logo" class="logo" />
+        <a href="index.html">
+          <img
+            src="images/gpm-logo.webp"
+            alt="Logo"
+            class="logo"
+            loading="eager"
+          />
+        </a>
         <nav>
           <div class="nav-toggle">&#9776;</div>
           <ul class="nav-links">
@@ -83,7 +132,8 @@
             <li><a href="mission.html">Vision & Mission</a></li>
             <li><a href="events.html">Events</a></li>
             <li><a href="sermons.html">Sermons</a></li>
-            <li><a href="media.html">Media & Blog</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="courses.html">Courses</a></li>
             <li><a href="give.html" class="active">Give Online</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -155,34 +205,71 @@
         </div>
       </div>
     </section>
+    <!-- After .give-options -->
+    <section
+      class="security-section"
+      style="max-width: 900px; margin: 3em auto; padding: 0 2em"
+    >
+      <!-- Trust Badges -->
+      <div
+        class="trust-badges"
+        style="
+          display: flex;
+          justify-content: center;
+          gap: 2em;
+          margin-bottom: 2em;
+          flex-wrap: wrap;
+        "
+      >
+        <div style="text-align: center">
+          <i
+            class="fas fa-shield-alt"
+            style="font-size: 2em; color: #198754"
+          ></i>
+          <p style="margin-top: 0.5em; font-size: 0.9em">Verified Security</p>
+        </div>
+        <div style="text-align: center">
+          <i
+            class="fas fa-certificate"
+            style="font-size: 2em; color: #198754"
+          ></i>
+          <p style="margin-top: 0.5em; font-size: 0.9em">ANBI Registered</p>
+        </div>
+        <div style="text-align: center">
+          <i
+            class="fas fa-euro-sign"
+            style="font-size: 2em; color: #198754"
+          ></i>
+          <p style="margin-top: 0.5em; font-size: 0.9em">Tax-Deductible</p>
+        </div>
+      </div>
 
+      <!-- Detailed Notice -->
+      <div
+        class="security-notice"
+        style="
+          background: #f8f9fa;
+          padding: 1.5em;
+          border-radius: 8px;
+          text-align: center;
+        "
+      >
+        <h3 style="color: #198754; margin-bottom: 0.5em">
+          Your Giving is Secure
+        </h3>
+        <p style="margin-bottom: 0.5em">
+          All bank details are verified and registered with the Dutch Central
+          Bank (DNB). As an ANBI-recognized organization, your donations are
+          tax-deductible.
+        </p>
+        <a href="anbi.html" style="color: #198754; text-decoration: underline">
+          View our official ANBI status and financial details
+        </a>
+      </div>
+    </section>
     <!-- Footer -->
     <section id="footer">
       <div class="footer-content">
-        <!-- Social Media Icons -->
-        <ul class="icons">
-          <li>
-            <a href="#" class="icon brands alt fa-twitter"
-              ><span class="label">Twitter</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon brands alt fa-facebook-f"
-              ><span class="label">Facebook</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon brands alt fa-instagram"
-              ><span class="label">Instagram</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon solid alt fa-envelope"
-              ><span class="label">Email</span></a
-            >
-          </li>
-        </ul>
-
         <!-- Useful Links -->
         <div class="footer-links">
           <h4>Links</h4>
