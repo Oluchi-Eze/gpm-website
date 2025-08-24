@@ -619,7 +619,7 @@ hr {
 }
 
 .about-column {
-	f flex: 1 1 300px;
+	flex: 1 1 300px;
 	background: rgb(214, 244, 249);
 	padding: 2em;
 	border-radius: 12px;
@@ -1040,3 +1040,4 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 body.menu-open {
 	overflow: hidden;
 }
+
