@@ -574,7 +574,7 @@ hr {
 }
 
 .page-header {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('images/about us.jpg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/about-us.jpg');
 	background-size: cover;
 	background-position: top;
 	padding: 6em 2em 4em;
@@ -732,7 +732,7 @@ hr {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.6); /* dark overlay to improve readability */
+  background: rgba(1, 35, 110, 0.6); /* dark overlay to improve readability */
   z-index: -1;
 }
 
